@@ -1,0 +1,57 @@
+{
+    "origin": [
+        "#intro# #adjectives# #devices# #hashtag#"
+    ],
+    "intro": [
+        "Check out this",
+        "We love this",
+        "We hate this",
+        "We tried this",
+        "What's this "
+    ],
+    "hashtag": [
+        "#iot",
+        "#bigdata",
+        "#internetofthings",
+        "#wearables",
+        "#vr",
+        "#networking",
+        "#iiot",
+        "#machinelearning",
+        "#tech",
+        "#technology",
+        "#security"
+    ],
+    "adjectives": [
+        "a wearable",
+        "a portable",
+        "a digestable",
+        "a voice-controlled",
+        "a wifi-connected",
+        "a connected",
+        "a smart"
+    ],
+    "devices": [
+        "fridge",
+        "freezer",
+        "cooker",
+        "watch",
+        "tv",
+        "router",
+        "speaker",
+        "subwoofer",
+        "grill",
+        "BBQ",
+        "bath",
+        "bed",
+        "toaster",
+        "trash can",
+        "heater",
+        "radiator",
+        "shower",
+        "smoke alarm"
+    ],
+    "reasons": [
+        "firmware update"
+    ]
+}
