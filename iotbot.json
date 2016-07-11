@@ -1,6 +1,6 @@
 {
     "origin": [
-        "#intro# #adjectives# #devices# #hashtag#"
+        "#intro# #adjectives# #object# for your #object2# #hashtag#"
     ],
     "intro": [
         "Check out this",
@@ -10,28 +10,29 @@
         "What's this "
     ],
     "hashtag": [
-        "#iot",
-        "#bigdata",
-        "#internetofthings",
-        "#wearables",
-        "#vr",
-        "#networking",
-        "#iiot",
-        "#machinelearning",
-        "#tech",
-        "#technology",
-        "#security"
+        "\\#iot",
+        "\\#bigdata",
+        "\\#internetofthings",
+        "\\#wearables",
+        "\\#vr",
+        "\\#networking",
+        "\\#iiot",
+        "\\#machinelearning",
+        "\\#tech",
+        "\\#technology",
+        "\\#security"
     ],
     "adjectives": [
-        "a wearable",
-        "a portable",
-        "a digestable",
-        "a voice-controlled",
-        "a wifi-connected",
-        "a connected",
-        "a smart"
+        "wearable",
+        "portable",
+        "digestable",
+        "voice-controlled",
+        "wifi-connected",
+        "connected",
+        "smart",
+        "bluetooth"
     ],
-    "devices": [
+    "object": [
         "fridge",
         "freezer",
         "cooker",
@@ -49,7 +50,17 @@
         "heater",
         "radiator",
         "shower",
-        "smoke alarm"
+        "smoke alarm",
+        "dog collar",
+        "pregnancy test",
+        "fan",
+        "tape measure"
+    ],
+    "object": [
+        "body",
+        "neck",
+        "dog",
+        "mother"
     ],
     "reasons": [
         "firmware update"
