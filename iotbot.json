@@ -1,13 +1,12 @@
 {
     "origin": [
-        "#intro# #adjectives# #object# for your #object2# #hashtag#"
+        "#intro# #adjectives# #object# for #object2# #hashtag#"
     ],
     "intro": [
         "Check out this",
         "We love this",
         "We hate this",
-        "We tried this",
-        "What's this "
+        "We tried this"
     ],
     "hashtag": [
         "\\#iot",
@@ -56,13 +55,11 @@
         "fan",
         "tape measure"
     ],
-    "object": [
-        "body",
-        "neck",
-        "dog",
-        "mother"
-    ],
-    "reasons": [
-        "firmware update"
+    "object2": [
+        "your body",
+        "your neck",
+        "your dog",
+        "runners",
+        "sailors"
     ]
 }
