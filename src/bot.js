@@ -5,33 +5,35 @@ function randomIndex(array) {
     return array[index];
 }
 
-
-// TODO: Change to promises
+// TODO: Finish adding promises
 class Bot {
     constructor(config) {
         this.twit = new Twit(config);
-        this.rateLimited = false;
     }
 
     // List of follower IDs
-    followerIds(callback) {
-        this.twit.get('followers/ids', (error, reply) => {
-            if (error) {
-                callback(error);
-            } else {
-                callback(null, reply);
-            }
+    followerIds() {
+        return new Promise((resolve, reject) => {
+            this.twit.get('followers/ids', (error, reply) => {
+                if (error) {
+                    reject(error);
+                } else {
+                    resolve(reply);
+                }
+            });
         });
     }
 
-    tweet(status, callback) {
-        if(typeof status !== 'string') {
-            return callback(new Error('tweet must be of type String'));
-        } else if(status.length > 140) {
-            return callback(new Error('tweet is too long: ' + status.length));
-        }
-        
-        this.twit.post('statuses/update', { status: status }, callback);
+    tweet(status) {
+        return new Promise((resolve, reject) => {
+            if(typeof status !== 'string') {
+                return reject(new Error('tweet must be of type String'));
+            } else if(status.length > 140) {
+                return reject(new Error('tweet is too long: ' + status.length));
+            }
+            
+            this.twit.post('statuses/update', { status: status }, resolve);
+        });
     }
 
     // Search for a tweet and follow that user who tweeted it

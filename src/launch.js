@@ -14,14 +14,19 @@ function handleError(error) {
 }
 
 const twitterBot = new Bot(configuration.credentials);
-twitterBot.followerIds((error, reply) => {
-    if (error) {
-        handleError(error);
-    } else {
-        const numberOfFollowers = reply.ids.length.toString();
+
+twitterBot.followerIds()
+    .then((followerIds) => {
+        const numberOfFollowers = followerIds.ids.length.toString();
         console.log(`#followers : ${numberOfFollowers}`);
-    }
-});
+    })
+    .catch((error) => handleError(error));
+
+// twitterBot.tweet('Tweet status.')
+//     .then((result) => {
+//         console.log(result);
+//     })
+//     .catch((error) => handleError(error));
 
 //twitterBot.searchTweetAndFollow({q: 'javascript'}, handleError);
 //twitterBot.retweet({q: 'javascript'}, handleError);

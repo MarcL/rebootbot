@@ -23,3 +23,9 @@ cp config/config.sample.js config/config.js
 ```shell
 npm start
 ```
+
+### TODO
+
+* Promisify bot
+* Add some bot logic
+* Add logging
