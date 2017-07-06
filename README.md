@@ -1,6 +1,6 @@
-# iotbot
+# rebootbot
 
-Twitter bot which tweets about the internet of things using Tracery.
+Twitter bot which tweets to users as customer support and uses Tracery.
 Initial code for bot.
 
 ## Install
@@ -8,7 +8,7 @@ Initial code for bot.
 Install the dependencies.
 
 ```shell
-git clone git@github.com:MarcL/iotbot.git
+git clone git@github.com:MarcL/rebootbot.git
 npm install
 ```
 
@@ -29,3 +29,4 @@ npm start
 * Promisify bot
 * Add some bot logic
 * Add logging
+* Totally rewrite!
